@@ -69,7 +69,8 @@ public class DoJournal implements Journal {
         String name1;                          //строковая переменная для имени файла
         name1 = String.valueOf(UserId);        //переводим ID пользователя в строку
         try {
-            f2.write(name1.getBytes());         //каждый раз перед записью действия записывает кто это сделал.
+            f2.write(name1.getBytes());//каждый раз перед записью действия записывает кто это сделал.
+            f2.write("\n".getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }

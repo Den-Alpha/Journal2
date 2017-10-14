@@ -4,7 +4,8 @@ public class Information {
     private String UI;
     private ActionDoc Act;
 
-    Information(){ } /**коструктор**/
+    Information(){ this.UI="0";
+    this.Act=ActionDoc.DOCUMENT_CREATED;} /**коструктор**/
 
     void writing(int m, String str) {
         if (m % 2 != 0) {               /**если строка нечётная - это пользовательский ID, чётная - действие**/
